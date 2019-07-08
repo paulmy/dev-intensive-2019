@@ -7,7 +7,7 @@ fun String.stripHtml(): String {
     return out.trim()
 }
 
-fun String.truncate(num: Int = 16): String {
+fun String.truncate(num: Int): String {
     if (num >= this.length - 1)
         return this
     return when(this[num]) {
